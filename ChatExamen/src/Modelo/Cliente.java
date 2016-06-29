@@ -5,6 +5,7 @@
  */
 package Modelo;
 
+import Vista.ChatFrame;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -22,7 +23,7 @@ public class Cliente implements Runnable{
 
     
     //     ChatFrame chatFrame;
-     //  ChatFrame chat
+     ChatFrame chatFrame;
       Socket cliente;
      DataOutputStream out;
      DataInputStream in;

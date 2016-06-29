@@ -19,7 +19,10 @@ import javax.swing.JOptionPane;
  */
 public class ServidorMain {
     
+    static final int  puerto = Integer.parseInt(JOptionPane.showInputDialog(null,""));
+    
      ChatFrame chatFrame;
+    
     
     public ServidorMain(){
     
@@ -28,8 +31,9 @@ public class ServidorMain {
     
    
     
+    
     //private final int puerto = 2020;
-    int puerto = chatFrame.getTextPuerto();
+    //int puerto = (Integer.parseInt(chatFrame.getTextPuerto()));
     private final int numConexiones = 500;
    
     private LinkedList<Socket> usuarios = new LinkedList<Socket>();
